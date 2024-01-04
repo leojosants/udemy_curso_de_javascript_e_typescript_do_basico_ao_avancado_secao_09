@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gerador de senhas</title>
+		<script src="assets/js/bundle.js" defer></script>
+	</head>
+	<body>
+		<section class="container" data_container>
+			<h1>Gerador de senhas</h1>
+			<div class="generatedPassword">Selecione as opções</div>
+
+			<label for="totalCharacters">
+				Quantidade de caracteres
+				<input
+					type="number"
+					name="totalCharacters"
+					id="totalCharacters"
+					class="totalCharacters"
+					min="1"
+					max="50"
+					value="16"
+				/>
+			</label>
+
+			<label for="chkUpperCase">
+				Adicionar maiúsculas
+				<input
+					type="checkbox"
+					name="chkUpperCase"
+					id="chkUpperCase"
+					class="chkUpperCase"
+					checked
+				/>
+			</label>
+
+			<label for="chkLowercase">
+				Adicionar minúsculas
+				<input
+					type="checkbox"
+					name="chkLowercase"
+					id="chkLowercase"
+					class="chkLowercase"
+				/>
+			</label>
+
+			<label for="chkNumbers">
+				Adicionar números
+				<input
+					type="checkbox"
+					name="chkNumbers"
+					id="chkNumbers"
+					class="chkNumbers"
+				/>
+			</label>
+
+			<label for="chkSymbols">
+				Adicionar símbolos
+				<input
+					type="checkbox"
+					name="chkSymbols"
+					id="chkSymbols"
+					class="chkSymbols"
+				/>
+			</label>
+
+			<button class="generatePasswordButton">Gerar senha</button>
+		</section>
+	</body>
+</html>
